@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsActivity">
+
+    <TextView
+        android:id="@+id/resultsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have successfuly completed the [TOPIC] Quiz!!"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:gravity="center_horizontal"
+        android:text="Head back to the quiz screen to try another quiz and check your achievements!"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_red_dark"
+        android:text="Quiz Screen"
+        android:drawableLeft="@drawable/ic_sign_text"
+        android:paddingLeft="10dp"
+        android:onClick="goToMainMenu"
+        android:layout_marginTop="300dp"
+        tools:ignore="OnClick" />
+
+
+</RelativeLayout>
